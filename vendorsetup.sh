@@ -36,7 +36,7 @@ rm -rf device/samsung_slsi/sepolicy
 git clone https://github.com/DragonFox-Project/android_device_samsung_slsi_sepolicy device/samsung_slsi/sepolicy --depth 1 -b evo-udc
 # Linaro BSP
 rm -rf hardware/samsung_slsi-linaro
-git clone https://github.com/DragonFox-Project/android_hardware_samsung_slsi-linaro_graphics hardware/samsung_slsi-linaro/graphics --depth 1 -b evo-udc/slsi-q
+git clone https://github.com/DragonFox-Project/android_hardware_samsung_slsi-linaro_graphics.git -b evo-udc/slsi-q hardware/samsung_slsi-linaro/graphics
 git clone https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_config.git -b lineage-21.0 hardware/samsung_slsi-linaro/config
 git clone https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_exynos.git -b lineage-21.0 hardware/samsung_slsi-linaro/exynos
 git clone https://github.com/linux4-bringup-priv/android_hardware_samsung_slsi-linaro_openmax.git -b lineage-21.0 hardware/samsung_slsi-linaro/openmax
