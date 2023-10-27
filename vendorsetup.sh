@@ -19,9 +19,9 @@ git clone https://github.com/ProjectElixir-Devices/android_device_samsung_beyond
 echo 'Cloning Vendor Trees [4/7]'
 # Vendor blobs for beyond2lte
 rm -rf vendor/samsung/beyond2lte
-git clone https://github.com/linux4-bringup-priv/android_vendor_samsung_beyond2lte -b lineage-20.0 vendor/samsung/beyond2lte
+git clone https://github.com/BananaDroid-exynos9820/android_vendor_samsung_beyond2lte vendor/samsung/beyond2lte
 rm -rf vendor/samsung/exynos9820-common
-git clone https://github.com/linux4-bringup-priv/android_vendor_samsung_exynos9820-common -b lineage-21.0 vendor/samsung/exynos9820-common
+git clone https://github.com/BananaDroid-exynos9820/android_vendor_samsung_exynos9820-common vendor/samsung/exynos9820-common
 
 echo 'Cloning Hardware Samsung [5/7]'
 # Hardware OSS parts for Samsung
@@ -36,12 +36,12 @@ rm -rf device/samsung_slsi/sepolicy
 git clone https://github.com/DragonFox-Project/android_device_samsung_slsi_sepolicy device/samsung_slsi/sepolicy --depth 1 -b evo-udc
 # Linaro BSP
 rm -rf hardware/samsung_slsi-linaro
-git clone https://github.com/DragonFox-Project/android_hardware_samsung_slsi-linaro_graphics.git -b evo-udc/slsi-q hardware/samsung_slsi-linaro/graphics
-git clone https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_config.git hardware/samsung_slsi-linaro/config
-git clone https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_exynos.git hardware/samsung_slsi-linaro/exynos
-git clone https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_openmax.git hardware/samsung_slsi-linaro/openmax
-git clone https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_exynos5.git hardware/samsung_slsi-linaro/exynos5
-git clone https://github.com/LineageOS/android_hardware_samsung_slsi-linaro_interfaces.git hardware/samsung_slsi-linaro/interfaces
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_graphics.git hardware/samsung_slsi-linaro/graphics
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_config.git hardware/samsung_slsi-linaro/config
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_exynos.git hardware/samsung_slsi-linaro/exynos
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_openmax.git hardware/samsung_slsi-linaro/openmax
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_exynos5.git hardware/samsung_slsi-linaro/exynos5
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_interfaces.git hardware/samsung_slsi-linaro/interfaces
 
 echo 'Cloning Sepolicy Dependency repo [7/7]'
 # Sepolicy
